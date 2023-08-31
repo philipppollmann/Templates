@@ -1,0 +1,2 @@
+![AzureBanner](https://images.contentstack.io/v3/assets/bltefdd0b53724fa2ce/blt845e2010782ff438/5ffe11861ae93152b725f655/blog-banner-cloud-azure.png)
+![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=for-the-badge&logo=microsoftazure&logoColor=white)
