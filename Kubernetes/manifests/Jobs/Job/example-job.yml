@@ -1,0 +1,14 @@
+apiVersion: batch/v1
+kind: Jobs
+metadata: 
+	name: example-job
+spec: # Job Specification
+	template: 
+		spec: 
+			containers:
+			- name: print
+				image: busybox:stable
+				command: ["echo", "This is a test!"]
+			restartPolicy: Never # Its a job to run one time
+	backoffLimit: 4
+	activeDeadlineSeconds: 10 # maximum time a job is allowed to run (after 10 sec kubernetes kills this job) 

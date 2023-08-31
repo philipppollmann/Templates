@@ -1,0 +1,1 @@
+kubectl apps -f hostpath-volume-test.yml

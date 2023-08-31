@@ -1,0 +1,1 @@
+kubectl apply -f pv-pod-test.yml
