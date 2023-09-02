@@ -1,1 +1,1 @@
-docker build -t mein-mssql-container .
+docker build -t mssqlcontainer .
