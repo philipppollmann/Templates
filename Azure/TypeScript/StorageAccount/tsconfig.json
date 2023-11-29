@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",             // Zielversion von JavaScript (z. B. ES5, ES6, ESNext)
+    "module": "CommonJS",           // Modulsystem (z. B. CommonJS, ES6)
+    "outDir": "./dist",             // Ausgabeverzeichnis für kompilierten Code
+    "strict": true,                 // Strikte Typüberprüfung
+    "esModuleInterop": true,        // Interoperabilität mit ES-Modulen
+    "skipLibCheck": true,           // Überspringen der Typenüberprüfung für externe Bibliotheken
+    "forceConsistentCasingInFileNames": true, // Erzwingen der Groß-/Kleinschreibungskonvention
+    "strictNullChecks": true,       // Strikte Überprüfung auf null-Werte
+    "strictFunctionTypes": true,    // Strikte Überprüfung von Funktionsarten
+    "noImplicitAny": true           // Keine impliziten 'any'-Typen zulassen
+  },
+  "include": [
+    "src/**/*.ts"                  // Dateien, die kompiliert werden sollen (Verzeichnismuster)
+  ],
+  "exclude": [
+    "node_modules"                 // Dateien/Verzeichnisse, die ausgeschlossen werden sollen
+  ]
+}

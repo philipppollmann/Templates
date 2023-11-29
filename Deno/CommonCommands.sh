@@ -1,0 +1,3 @@
+deno init
+
+deno test

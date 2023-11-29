@@ -1,7 +1,11 @@
+// Configuration for a local device (Mac M1 Chip)
 terraform {
   required_version = "1.3.4"
   required_providers {
-
+    kubernetes = {
+      source = "hashicorp/kubernetes"
+      version = "2.11.0"
+    }
   }
   backend "local" {
     path = "/tmp/terraform.tfstate"
@@ -9,5 +13,5 @@ terraform {
 }
 
 provider "kubernetes" {
-    host = "https://127.0.0.1:6443"
+  config_path    = "~/.kube/config"
 }
