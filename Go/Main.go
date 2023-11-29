@@ -2,7 +2,6 @@ package Go
 
 import (
 	"fmt"
-	_ "fmt"
 )
 
 func main() {
