@@ -1,3 +1,7 @@
 FROM mongo:latest
 
+ENV MONGO_INITDB_DATABASE="examplemongodb"
+ENV MONGO_INITDB_ROOT_USERNAME="exampleuser"
+ENV MONGO_INITDB_ROOT_PASSWORD="examplepassword"
+
 EXPOSE 27017
