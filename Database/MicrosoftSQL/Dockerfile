@@ -1,10 +1,14 @@
 FROM mcr.microsoft.com/mssql/server:latest
 
+ARG SA_PASSWORD
+ARG MSSQL_USER
+ARG MSSQL_PASSWORD
+
 ENV ACCEPT_EULA=Y \
-    SA_PASSWORD=DeinKomplexesPasswort123! \
+    SA_PASSWORD=${SA_PASSWORD} \
     MSSQL_PID=Developer \
-    MSSQL_USER=DeinAdminName \
-    MSSQL_PASSWORD=DeinAdminPasswort123!
+    MSSQL_USER=${MSSQL_USER} \
+    MSSQL_PASSWORD=${MSSQL_PASSWORD}
 
 
 EXPOSE 1433
